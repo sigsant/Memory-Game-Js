@@ -1,0 +1,9 @@
+div{
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    max-width: 100%;
+    width: 17%;
+    cursor: pointer;
+}
