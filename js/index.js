@@ -1,5 +1,4 @@
 var cartas = document.getElementsByTagName("img");
-var gameOver = false;
 var puntos = 0;
 
 document.body.onclick = funcionCarta;
@@ -63,7 +62,6 @@ function validarParejas(esto, palo, clase){
 function finPartida(){
     puntos++;
     if(puntos === 4){
-        gameOver = true;
         alert("¡Enhorabuena, has ganado!");
     }
 }
