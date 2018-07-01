@@ -1,5 +1,6 @@
 var cartas = document.getElementsByTagName("img");
 var gameOver = false;
+var puntos = 0;
 
 document.body.onclick = funcionCarta;
 
@@ -54,6 +55,15 @@ function validarParejas(esto, palo, clase){
         alert("¡¡Pareja!!");
         palo[0].style.display="none";
         palo[1].style.display="none";
+        finPartida();
     }
     
+}
+
+function finPartida(){
+    puntos++;
+    if(puntos === 4){
+        gameOver = true;
+        alert("¡Enhorabuena, has ganado!");
+    }
 }
