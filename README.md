@@ -9,17 +9,17 @@ Está escrito en simple Javascript, con posibilidades de usar Jquery.
 
 ## ¿Qué hay?
 
-De momento se encuentran las funciones más simples para el gameplay del juego: inicialización de las cartas y el emparejamiento de las cartas, con su consiguiente desaparición.
+De momento se encuentran las funciones más simples para el gameplay del juego: inicialización de las cartas, el emparejamiento de las cartas y establecer el final del juego. Todo ahora mismo es muy rudimentario.
 
 ## ¿Qué falta?
 
+
 En orden de prioridad:
 
-1. Establecer el final del juego:
 
-* Alertar al usuario que ha conseguido emparejar todas las cartas. Sea mediante efectos visuales al hacer una pareja o al final de la partida.
+1. Simplificar y refactorizar el código lo máximo posible.
 
-2. Simplificar y refactorizar el código lo máximo posible.
+2. Hacer más comodo el gameplay.
 
 3. Generar de algún modo aleatoridad al comienzo de cada sesión.
 
