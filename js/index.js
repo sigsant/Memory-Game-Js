@@ -15,31 +15,45 @@ var heart = document.getElementsByClassName("heart");
 var diamond = document.getElementsByClassName("diamond");
 var spades = document.getElementsByClassName("spades");
 var clubs = document.getElementsByClassName("clubs");
+
      //Si las clases coinciden, voltea cada carta
     for(var x = 0; x < heart.length; x++){
         if(this == heart[x]){
+            corazon = "corazon";
             this.src="../img/heart.png";
-            validarParejas(this, heart);
+            validarParejas(this, heart, corazon);
         }
         if(this == diamond[x]){
+            diamante = "diamante";
             this.src="../img/diamond.png";
-            validarParejas(this, diamond);
+            validarParejas(this, diamond, diamante);
         }
         if(this == spades[x]){
+            pica = "pica";
             this.src="../img/spades.png";
-            validarParejas(this, spades);
+            validarParejas(this, spades, pica);
         }
         if(this == clubs[x]){
+            trebol = "trebol";
             this.src="../img/clubs.png";  
-            validarParejas(this, clubs); 
+            validarParejas(this, clubs, trebol); 
         }
     }
 } 
 
-function validarParejas(esto, palo){
-    if(esto == palo[0]){
-        console.log("Primera pareja");
-    } else if(esto == palo[1]){
-       console.log("Segunda pareja");
+function validarParejas(esto, palo, clase){
+    if(esto === palo[0]){
+        esto.classList.add(clase);
+    } 
+    if(esto === palo[1]){
+       esto.classList.add(clase);
     }
+
+    //Verifica que se ha revelado la pareja
+    if(palo[0].matches("." + clase) && palo[1].matches("." + clase)){
+        alert("¡¡Pareja!!");
+        palo[0].style.display="none";
+        palo[1].style.display="none";
+    }
+    
 }
