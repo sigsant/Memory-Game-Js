@@ -9,7 +9,7 @@ Está escrito en simple Javascript, con posibilidades de usar Jquery.
 
 ## ¿Qué hay?
 
-De momento se encuentran las funciones más simples para el desarrollo del juego como es la inicialización de cada una de las cartas y el volteo de estas.
+De momento se encuentran las funciones más simples para el gameplay del juego: inicialización de las cartas y el emparejamiento de las cartas, con su consiguiente desaparición.
 
 ## ¿Qué falta?
 
@@ -18,8 +18,6 @@ En orden de prioridad:
 1. Establecer el final del juego:
 
 * Alertar al usuario que ha conseguido emparejar todas las cartas. Sea mediante efectos visuales al hacer una pareja o al final de la partida.
-
-* Escribir los booleanos que definan cuando se hayan alcanzado la fase anteriormente mencionada.
 
 2. Simplificar y refactorizar el código lo máximo posible.
 
